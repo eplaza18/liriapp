@@ -6,4 +6,4 @@ spotify-this-song - will look up information for song search.
 
 search in the terminal will look like this
 
-node liri.js concert-this <your search item here>
+node liri.js concert-this `<your search item here>`
