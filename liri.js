@@ -54,10 +54,6 @@ if (searchType === "spotify-this-song" && !searchSubject) {
     })
     .catch(function(err) {
       console.log(err);
-    });
-} else if (searchType === "spotify-this-song") {
-  song = searchSubject;
-  spotifySearch();
 }
 // Spotify Search Command - 'spotify-this-song'
 function spotifySearch() {
