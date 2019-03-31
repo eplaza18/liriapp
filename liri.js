@@ -14,7 +14,7 @@ let searchType = process.argv[2];
 let searchSubject = process.argv.slice(3).join(" ");
 
 //Movie Search if else statements
-if (searchType === "movie-this" && searchSubject === undefined) {
+if (searchType === "movie-this" && !searchSubject) {
   movieName = "mr nobody";
   movieSearch();
 } else if (searchType === "movie-this") {
@@ -41,8 +41,8 @@ function movieSearch() {
   });
 }
 //Spotify-search if else statements
-if (searchType === "spotify-this-song" && searchSubject === undefined) {
-  song = "The Sign";
+if (searchType === "spotify-this-song" && !searchSubject) {
+  // song = "The Sign";
   // spotifySearch(); - returns a Harry Styles song the sign instead of Ace of Base
   spotify
     .request("https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE")
